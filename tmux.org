@@ -1,0 +1,32 @@
+* Tmux
+**** 转自: https://www.cnblogs.com/maoxiaolv/p/5526602.html
+**** 转自: http://jack-boy.iteye.com/blog/1586908
+**** 转自: https://segmentfault.com/a/1190000007427965
+**** 转自: https://blog.csdn.net/hcx25909/article/details/7602935
+** 概念
+*** session 系统
+*** window  窗口
+*** pane    面板
+** 基本操作
+*** prefix (Ctrl+B)
+*** Session操作
+
+**** 关闭session 		tmux kill-session -t basic(terminal)（）
+**** 查看/切换session		prefix s
+**** 临时退出session		prefix d
+**** 退出并删除session		Ctrl+b :kill-session
+**** 删除所有session		Ctrl+b :kill-server
+**** Rename session		prefix $
+*** Window操作
+**** 新建窗口			prefix c
+**** 切换到上一个窗口		prefix space
+**** Close window		prefix &
+**** 窗口切换			prefix [窗口号]
+
+*** Pane操作
+**** 切换到另一个窗格		prefix o
+**** 查看所有窗格编号		prefix q
+**** 垂直拆分一个新窗格		prefix "
+**** 水平拆分一个新窗格		prefix %
+**** 放大当前窗格			prefix z
+**** 关闭窗格			prefix x
