@@ -1,0 +1,8 @@
+*** 如何删除项目
+#+BEGIN_SRC sh
+git rm -r --cached filename  # 不加--cached可以把本地文件也一起删除
+git commit filename -m "***"
+git push -u origin master
+#+END_SRC
+
+
